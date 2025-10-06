@@ -1,0 +1,21 @@
+[project]
+name = "lyteforge-skills-test-1"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Peyman",email = "Durango2k13@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "uvicorn (>=0.37.0,<0.38.0)",
+    "fastapi (>=0.118.0,<0.119.0)",
+    "pure-python-adb (==0.3.*)"
+]
+
+[tool.poetry]
+packages = [{include = "lyteforge_skills_test_1", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
